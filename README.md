@@ -6,18 +6,18 @@ This repository hosts release binaries and documentation only; the source reposi
 
 ## Download
 
-**Latest version: v1.4.0** · [Always get the newest release](https://github.com/grloper/OmniPose-Fit-releases/releases/latest) · [All releases](https://github.com/grloper/OmniPose-Fit-releases/releases)
+**Latest version: v1.5.0** · [Always get the newest release](https://github.com/grloper/OmniPose-Fit-releases/releases/latest) · [All releases](https://github.com/grloper/OmniPose-Fit-releases/releases)
 
 | File | Use for | Size | SHA-256 |
 |------|---------|------|---------|
-| [`OmniPoseFit-arm64-v8a.apk`](https://github.com/grloper/OmniPose-Fit-releases/releases/download/v1.4.0/OmniPoseFit-arm64-v8a.apk) | Almost all modern phones (recommended) | 53.7 MiB | `c851a7e4e3194c8ea0f694869dbd9883f1ffef29875163f10dbb427402e13000` |
-| [`OmniPoseFit-armeabi-v7a.apk`](https://github.com/grloper/OmniPose-Fit-releases/releases/download/v1.4.0/OmniPoseFit-armeabi-v7a.apk) | Older 32-bit ARM phones | 48.9 MiB | `5e88c8f0404714b1e62545df37f60415a882c00a89cf8eb71adbefdca4f88396` |
-| [`OmniPoseFit-x86_64.apk`](https://github.com/grloper/OmniPose-Fit-releases/releases/download/v1.4.0/OmniPoseFit-x86_64.apk) | x86_64 emulators / some Chromebooks | 52.8 MiB | `796ad74dc976c2e5adc68cff7144fa3e477a56806fd9e580dfcfc14535722f02` |
-| [`OmniPoseFit-universal.apk`](https://github.com/grloper/OmniPose-Fit-releases/releases/download/v1.4.0/OmniPoseFit-universal.apk) | Any of the above (larger download) | 104.2 MiB | `9a67b1c53aa36b78fe167e52b59057588ca7dfa0d30ab322561ad35a79b7f515` |
+| [`OmniPoseFit-arm64-v8a.apk`](https://github.com/grloper/OmniPose-Fit-releases/releases/download/v1.5.0/OmniPoseFit-arm64-v8a.apk) | Almost all modern phones (recommended) | 55.6 MiB | `62569bd2b15d1c81574c889aad041522d5cf68a5a498a676c364be001e13ff2a` |
+| [`OmniPoseFit-armeabi-v7a.apk`](https://github.com/grloper/OmniPose-Fit-releases/releases/download/v1.5.0/OmniPoseFit-armeabi-v7a.apk) | Older 32-bit ARM phones | 50.3 MiB | `5a1d228cd2d184be5faff05f63f27498d6a26d75b85e698b03066bb5d04486e1` |
+| [`OmniPoseFit-x86_64.apk`](https://github.com/grloper/OmniPose-Fit-releases/releases/download/v1.5.0/OmniPoseFit-x86_64.apk) | x86_64 emulators / some Chromebooks | 53.9 MiB | `3a9b56ab80231a4dd77f40d70d61449252eb758a2aed8c2b6e05fab4c4519fa3` |
+| [`OmniPoseFit-universal.apk`](https://github.com/grloper/OmniPose-Fit-releases/releases/download/v1.5.0/OmniPoseFit-universal.apk) | Any of the above (larger download) | 109.0 MiB | `1d13ecd706b16a9b3723213ba455ebd8ca3cf78975f8df7a6a7bfcafb6b422c5` |
 
-A [`SHA256SUMS.txt`](https://github.com/grloper/OmniPose-Fit-releases/releases/download/v1.4.0/SHA256SUMS.txt) file is attached to the release. The checksums above were computed from the downloaded v1.4.0 release assets. If this table is behind, the [latest release](https://github.com/grloper/OmniPose-Fit-releases/releases/latest) page is authoritative.
+A [`SHA256SUMS.txt`](https://github.com/grloper/OmniPose-Fit-releases/releases/download/v1.5.0/SHA256SUMS.txt) file is attached to the release. The checksums above were computed from the v1.5.0 release assets. If this table is behind, the [latest release](https://github.com/grloper/OmniPose-Fit-releases/releases/latest) page is authoritative.
 
-> **Debug-signed builds.** These APKs are signed with an Android *debug* certificate (SHA-256 `77e51f6a94adba728d5812349a6c08dc13451d29accd1245878c5abeeb6eb793`), not a release key. They are not Play Store builds. Android only upgrades an installed copy with an APK signed by the same certificate, and debug certificates are not under strong key management, so only install builds from this repository after checking the hash.
+> **Debug-signed builds.** These APKs are signed with an Android *debug* certificate (SHA-256 `37c2a6c2a16d67a5943d8b5d3bef7012d51b26984b38dadd58f66071f8208c53`), not a release key. They are not Play Store builds. Android only upgrades an installed copy with an APK signed by the same certificate, and debug certificates are not under strong key management, so only install builds from this repository after checking the hash.
 
 ### Which file do I pick?
 
@@ -69,7 +69,9 @@ The values must match exactly. If they do not, delete the file and download it a
 - Only some skills have camera tracking; the others use manual practice. Variant skills that share a generic schema cannot unlock progression automatically.
 - Preview clips are illustrations, not recordings of the app.
 - Builds are debug-signed and not reproducible; see the warning above.
-- v1.0.0–v1.4.0 were published with identical internal version numbers (versionCode 1), so Android cannot order them; later builds use a monotonic versionCode.
+- v1.0.0–v1.4.0 were published with identical internal version numbers (versionCode 1), so Android cannot order them; v1.5.0 (versionCode 10500) and later use a monotonic versionCode.
+- v1.5.0 was signed with a different debug certificate than v1.0.0–v1.4.0 (see the warning above), so it cannot be installed over those versions: uninstall the old copy first (this deletes local progress).
+- v1.5.0 has not been verified on a physical phone or camera.
 
 ## Screenshots
 
@@ -81,7 +83,7 @@ The values must match exactly. If they do not, delete the file and download it a
 |---|---|---|---|
 | <img src="screenshots/04c_hud_error.png" width="180"> | <img src="screenshots/05_session_summary.png" width="180"> | <img src="screenshots/02_permission_denied.png" width="180"> | <img src="screenshots/06_settings.png" width="180"> |
 
-_These images are **rendered on the JVM** (Robolectric + Roborazzi, deterministic sample data, synthetic backdrop instead of a camera feed) — they are **not device captures** and do not demonstrate real pose-detection accuracy._
+_v1.5.0 screenshots. These images are **rendered on the JVM** (Robolectric + Roborazzi, deterministic sample data, synthetic backdrop instead of a camera feed) — they are **not device captures** and do not demonstrate real pose-detection accuracy._
 
 ## Privacy
 
