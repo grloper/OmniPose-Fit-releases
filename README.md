@@ -73,7 +73,15 @@ The values must match exactly. If they do not, delete the file and download it a
 
 ## Screenshots
 
-_Not yet available. Real device screenshots will be added later._
+| Progress map | Exercise library | Live HUD – tracking strong | Live HUD – weak angle / half rep |
+|---|---|---|---|
+| <img src="screenshots/01_progress_map.png" width="180"> | <img src="screenshots/03_exercise_library.png" width="180"> | <img src="screenshots/04a_hud_good.png" width="180"> | <img src="screenshots/04b_hud_warning.png" width="180"> |
+
+| Live HUD – tracking lost / camera error | Session summary | Camera permission rationale | Settings & privacy |
+|---|---|---|---|
+| <img src="screenshots/04c_hud_error.png" width="180"> | <img src="screenshots/05_session_summary.png" width="180"> | <img src="screenshots/02_permission_denied.png" width="180"> | <img src="screenshots/06_settings.png" width="180"> |
+
+_These images are **rendered on the JVM** (Robolectric + Roborazzi, deterministic sample data, synthetic backdrop instead of a camera feed) — they are **not device captures** and do not demonstrate real pose-detection accuracy._
 
 ## Privacy
 
